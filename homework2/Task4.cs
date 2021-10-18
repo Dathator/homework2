@@ -11,9 +11,10 @@ namespace homework2
             int[] a = new int[n.Length];
             foreach (char i in n)
             {
-                a[a.Length - n.IndexOf(i)] = i;
+                a[a.Length - 1 - n.IndexOf(i)] = i;
             }
-            Console.WriteLine(String.Join("", a));
+            foreach (char i in a)
+                Console.Write(i);
         }
     }
 }
