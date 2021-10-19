@@ -17,9 +17,11 @@ namespace homework2
             while (y0 < h1)
             {
                 y0 += a1;
-                y0 -= b1;
-                if (y0 < h1)
-                    n += 1;
+                n += 1;
+                if (y0 >= h1)
+                    break;
+                else
+                    y0 -= b1;
             }
             Console.WriteLine(n);
         }
